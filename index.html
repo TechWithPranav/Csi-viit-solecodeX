@@ -22,6 +22,41 @@
 	<!-- HEAD_svelte-vb3iq7_END --><!-- HEAD_svelte-qp2r1q_START -->
 	<script async="" id="twitter-widget" src="js/widgets.js" charset="utf-8" data-svelte-h="svelte-1tlwjnt"></script>
 	<!-- HEAD_svelte-qp2r1q_END -->
+
+
+
+
+	<style>
+		/* text {
+			font-size: 97px;
+			font-weight: bold;
+			font-family: Arial, sans-serif;
+			fill: #f1b314;
+			opacity: 0.8;
+		}
+	 */
+		@media (max-width: 700px) {
+			.hero_text {
+				font-size: 150px;
+			}
+
+			/* .barsmain{
+				display: none;
+			} */
+			.width_enhance{
+				width: 700px;
+			}
+			 /* Ensure no clipping of the SVG */
+			 svg {
+        /* width: 100%;
+        height: 100%; */
+        overflow: visible;  /* Allow overflow of text */
+    }
+		}
+	</style>
+	
+
+	
 </head>
 
 <body data-sveltekit-preload-data="hover">
@@ -165,7 +200,7 @@
 							<div class="w-[165px] md:w-[254px] svelte-1rm2d4j">
 
 								<!-- //bars........left....................... -->
-								<svg viewBox="0 0 254 96" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<svg viewBox="0 0 254 96" class="barsmain" fill="none" xmlns="http://www.w3.org/2000/svg" >
 									<path
 										d="M1 0.615723V95.0657M13 0.615723V95.0657M25 0.615723V95.0657M37 0.615723V95.0657M49 0.615723V95.0657M61 0.615723V95.0657M73 0.615723V95.0657M85 0.615723V95.0657M97 0.615723V95.0657M109 0.615723V95.0657M121 0.615723V95.0657M133 0.615723V95.0657M145 0.615723V95.0657M157 0.615723V95.0657M169 0.615723V95.0657M181 0.615723V95.0657M193 0.615723V95.0657M205 0.615723V95.0657M217 0.615723V95.0657M229 0.615723V95.0657M241 0.615723V95.0657M253 0.615723V95.0657"
 										stroke="url(#paint0_linear_1318_2589)"></path>
@@ -289,12 +324,12 @@
 
 								<!-- ///radr text - hero .................... -->
 
-								<div class="relative w-[345px] md:w-[520px]">
+								<div class="relative w-[345px] md:w-[520px] ">
 
 
 
 
-									<svg class="relative left-0 top-0 w-full" style="margin-top: 55px;" viewBox="0 0 520 95" fill="none"
+									<svg class="relative left-0 top-0 w-full " style="margin-top: 69px;" viewBox="0 0 520 95" fill="none"
 										preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg">
 										<g filter="url(#filter0_d_6_11)">
 											<!-- <path
@@ -366,10 +401,11 @@
 
 
 											<text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle"
-												font-size="90px" font-weight="bold" font-family="Arial, sans-serif"
-												fill="#f1b314" opacity="0.8">
+												font-size="97px" font-weight="bold" font-family="Arial, sans-serif"
+												fill="#f1b314" opacity="0.8" class="hero_text " style="">
 											SoloCodeX
 											</text>
+											
 
 
 
@@ -446,9 +482,9 @@
 
 
 
-									<div class="blur-[6px] absolute inset-0 z-10 w-full svelte-j84kd5">
+									<div class="blur-[6px] absolute inset-0 z-10 w-full svelte-j84kd5 ">
 
-										<svg viewBox="0 0 520 95" fill="none" xmlns="http://www.w3.org/2000/svg">
+										<svg viewBox="0 0 520 95" fill="none" xmlns="http://www.w3.org/2000/svg" class="">
 											<defs>
 												<clipPath id="radar-logo-clip">
 													<path
@@ -621,7 +657,7 @@
 
 
 
-							<div class="w-[165px] rotate-180 md:w-[254px] svelte-1rm2d4j">
+							<div class="w-[165px] rotate-180 md:w-[254px] svelte-1rm2d4j   barsmain">
 								<!-- //.........bars.......right....................... -->
 
 								<svg viewBox="0 0 254 96" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -2742,7 +2778,7 @@
 
 						 <div
 						 class="flex w-fit items-center justify-center gap-2.5 rounded-full border border-[rgba(242,196,79,0.10)] bg-[conic-gradient(from_13deg_at_50%_50%,rgba(242,196,79,0.00)_0deg,rgba(242,196,79,0.10)_360deg)] px-3 py-1 shadow-[0px_0px_12px_0px_rgba(255,255,255,0.10)]">
-						 <span class="text-radar-primary-400 font-inter text-center text-[23px] font-[500] leading-[21px] p-3">We are excited to share the official rule book for SoloCodeX! Please refer to the document to understand the event structure, eligibility criteria, scoring guidelines, and other important information</span>
+						 <span class="text-radar-primary-400 font-inter text-center text-[23px] font-[500] leading-[21px] p-3">We're excited to present the SoloCodeX rulebook! It outlines the event structure, eligibility, scoring, and essential details. Review it to stay informed.</span>
 					 </div>
 						
 						<a
@@ -2765,16 +2801,16 @@
 
 			<footer class="relative z-20 ">
 				<div
-					class="mx-auto hidden max-w-[100px] flex-row items-center justify-center gap-[80px] px-8 pb-[80px] pt-5 md:flex ">
-					 <div class="flex items-center gap-[56px]">
+					class="mx-auto  max-w-[100px] flex-row items-center justify-center gap-[80px] px-8 pb-[80px] pt-5 md:flex ">
+					 <div class="flex items-center gap-[56px] justify-center">
 						
 							<!-- <a
 								class="font-inter flex w-[80px] min-w-[80px] items-center justify-center text-[14px] font-[400] leading-[1.5] text-white hover:text-[#F2F2F2]"
 								href="/radar/resources">Resources</a> -->
 							
 							<a
-							class="font-inter text-radar-gray-300 flex w-fit min-w-[80px] items-center justify-center text-[14px] font-[400] leading-[1.5]  hover:text-[#F2F2F2]"
-							href="/accelerator" target="_blank"> &copy; 2024 SoloCodeX. All rights reserved. | Hosted by the Computer Society of India (CSI) – VIIT Student Chapter in collaboration with CodeChef.</a>
+							class="font-inter text-radar-gray-300 flex w-fit min-w-[80px] items-center justify-center text-[14px] font-[400] leading-[1.5]  hover:text-[#F2F2F2]" style="text-align: center;"
+							href="/accelerator" target="_blank"> &copy; 2024 SoloCodeX. All rights reserved</a>
 						
 						
 						
