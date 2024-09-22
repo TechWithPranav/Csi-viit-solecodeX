@@ -1,0 +1,36 @@
+.square.svelte-b6iudt.svelte-b6iudt {
+    position: absolute;
+    height: 4px;
+    width: 4px;
+    --tw-bg-opacity: 1;
+    background-color: rgb(160 160 160 / var(--tw-bg-opacity))
+}
+
+.vertical-line.svelte-b6iudt.svelte-b6iudt {
+    position: absolute;
+    top: .75rem;
+    bottom: .75rem;
+    width: .125rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(28 28 28 / var(--tw-bg-opacity))
+}
+
+.horizontal-line.svelte-b6iudt.svelte-b6iudt {
+    position: absolute;
+    left: .75rem;
+    right: .75rem;
+    height: .125rem;
+    --tw-bg-opacity: 1;
+    background-color: rgb(28 28 28 / var(--tw-bg-opacity))
+}
+
+.primary.svelte-b6iudt>.square.svelte-b6iudt {
+    --tw-bg-opacity: 1;
+    background-color: rgb(112 225 200 / var(--tw-bg-opacity))
+}
+
+.primary.svelte-b6iudt>.horizontal-line.svelte-b6iudt,
+.primary.svelte-b6iudt>.vertical-line.svelte-b6iudt {
+    --tw-bg-opacity: 1;
+    background-color: rgb(4 49 44 / var(--tw-bg-opacity))
+}

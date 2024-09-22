@@ -1,0 +1,21 @@
+@keyframes svelte-19nggzq-grow-and-fade {
+    0% {
+        width: 64px;
+        height: 64px;
+        opacity: 0
+    }
+
+    50% {
+        opacity: .1
+    }
+
+    to {
+        width: 896px;
+        height: 896px;
+        opacity: 0
+    }
+}
+
+.animate-grow-and-fade.svelte-19nggzq {
+    animation: svelte-19nggzq-grow-and-fade 10s linear infinite
+}
