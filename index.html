@@ -703,11 +703,68 @@
 							href="https://www.instagram.com/csiviit/" target="_blank">CSI VIIT</a> and 
 							<a class="text-radar-primary-400 hover:text-radar-primary-500 transition-all duration-300"
 							href="https://www.instagram.com/codechef.viit/" target="_blank">CodeChef VIIT.</a>
+					</h4> 
+					
+			
+					<style>
+						.button-container {
+							display: flex;
+							gap: 10px; /* Space between buttons */
+						}
+					
+						.animated-button {
+							position: relative; /* For glow effect */
+							overflow: hidden; /* Prevents overflow of the glow */
+							transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow */
+							border: none; /* Remove border for consistency */
+							color: #1D1B16; /* Text color matching the original button */
+							padding: 12px 24px; /* Match the padding to Register Now button */
+							text-align: center;
+							text-decoration: none;
+							font-weight: 500;
+							font-size: 16px; /* Match font size to Register Now button */
+							border-radius: 8px; /* Match border radius */
+							background: linear-gradient(to bottom, #F2C44F, #F3B20C); /* Match background gradient */
+						}
+					
+						.animated-button::after {
+							content: '';
+							position: absolute;
+							top: 0;
+							left: 0;
+							right: 0;
+							bottom: 0;
+							background: radial-gradient(circle, rgba(255, 193, 7, 0.4), transparent);
+							opacity: 0; /* Start as invisible */
+							transition: opacity 0.3s ease; /* Smooth transition for glow */
+							pointer-events: none; /* Prevents mouse events on the pseudo-element */
+						}
+					
+						.animated-button:hover {
+							transform: scale(1.05); /* Scale up on hover */
+							box-shadow: 0 0 15px rgba(255, 193, 7, 0.8); /* Glow effect */
+						}
+					
+						.animated-button:hover::after {
+							opacity: 1; /* Show the glow on hover */
+						}
+					</style>
+					
+					<h4 class="button-container">
+						<a href="https://forms.gle/yPfXAaJruEWrzRtL8" target="_blank"
+							class="font-inter rounded-lg border border-[#F4C871] bg-gradient-to-b from-[#F2C44F] to-[#F3B20C] px-4 py-3 text-center text-base font-[500] leading-6 text-[#1D1B16] transition-all duration-300 hover:scale-105 active:scale-100"
+							data-svelte-h="svelte-17eauda">Register Now</a>
+					
+						<!-- Swags Button with Matching Styles -->
+						<a href="swags.html" target="_blank"
+							class="animated-button">
+							Swags
+						</a>
+					</h4>
+					
+					
+					
 						
-
-					</h4> <a href="https://forms.gle/yPfXAaJruEWrzRtL8" target="_blank"
-						class="font-inter rounded-lg border border-[#F4C871] bg-gradient-to-b from-[#F2C44F] to-[#F3B20C] px-4 py-3 text-center text-base font-[500] leading-6 text-[#1D1B16] transition-all duration-300 hover:scale-105 active:scale-100"
-						data-svelte-h="svelte-17eauda">Register Now</a>
 				</div>
 				<div class="absolute inset-0 -z-10 h-full w-full overflow-hidden">
 					<div class="absolute -bottom-[280px] left-1/2 z-10 -translate-x-1/2">
